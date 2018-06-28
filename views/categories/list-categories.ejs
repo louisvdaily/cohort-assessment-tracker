@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <%- include('../partials/navbar') %>
+      <hr>
+      <h3>Categories</h3>
+      <ul>
+        <% categories.forEach((category) => { %>
+          <li><%= category.categoryname %></li>
+        <% }) %>
+      </ul>
+    </main>
+  </body>
+</html>
